@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маркет | Доска объявлений</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+
+      <a href="#" class="logo">маркет.</a>
+
+      <div class="location">📍 Ростов-на-Дону</div>
+
+      <form class="search">
+        <input type="text" placeholder="Найти товары, услуги и объявления...">
+        <button type="submit">Найти</button>
+      </form>
+
+      <nav class="header-actions">
+        <a href="#">Избранное</a>
+        <a href="#">Войти</a>
+        <a href="#" class="add-button">+ Разместить</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="page-heading">
+      <h1>Покупайте и продавайте рядом</h1>
+      <p>Тысячи интересных предложений каждый день</p>
+    </section>
+
+    <section class="categories">
+
+      <a href="#" class="category">
+        <div class="category-icon">📱</div>
+        <h3>Электроника</h3>
+        <span>12 540 объявлений</span>
+      </a>
+
+      <a href="#" class="category">
+        <div class="category-icon">🚗</div>
+        <h3>Автомобили</h3>
+        <span>8 320 объявлений</span>
+      </a>
+
+      <a href="#" class="category">
+        <div class="category-icon">🏠</div>
+        <h3>Недвижимость</h3>
+        <span>4 120 объявлений</span>
+      </a>
+
+      <a href="#" class="category">
+        <div class="category-icon">👕</div>
+        <h3>Одежда</h3>
+        <span>6 870 объявлений</span>
+      </a>
+
+      <a href="#" class="category">
+        <div class="category-icon">🛋️</div>
+        <h3>Для дома</h3>
+        <span>3 450 объявлений</span>
+      </a>
+
+      <a href="#" class="category">
+        <div class="category-icon">⚽</div>
+        <h3>Хобби и отдых</h3>
+        <span>2 890 объявлений</span>
+      </a>
+
+    </section>
+
+    <div class="content-layout">
+
+      <aside class="sidebar">
+        <h3>Фильтры</h3>
+
+        <div class="filter-group">
+          <div class="filter-title">Категория</div>
+          <select>
+            <option>Все категории</option>
+            <option>Электроника</option>
+            <option>Автомобили</option>
+            <option>Недвижимость</option>
+            <option>Одежда</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Цена, ₽</div>
+          <div class="price-inputs">
+            <input type="text" placeholder="От">
+            <input type="text" placeholder="До">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Состояние</div>
+          <label class="checkbox">
+            <input type="checkbox"> Новое
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> Б/у
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-title">Продавец</div>
+          <label class="checkbox">
+            <input type="checkbox"> Частное лицо
+          </label>
+          <label class="checkbox">
+            <input type="checkbox"> Компания
+          </label>
+        </div>
+
+        <button class="apply-button">Показать объявления</button>
+      </aside>
+
+      <section class="listings">
+
+        <div class="listings-header">
+          <h2>Свежие объявления</h2>
+
+          <select>
+            <option>Сначала новые</option>
+            <option>Сначала дешевле</option>
+            <option>Сначала дороже</option>
+          </select>
+        </div>
+
+        <div class="listings-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/iphone.png" alt="Смартфон">
+              <button class="favorite" aria-label="Добавить в избранное">+</button>
+            </div>
+            <div class="product-info">
+              <div class="verified">✓ Проверенный продавец</div>
+              <div class="product-price">45 000 ₽</div>
+              <div class="product-title">Apple iPhone 14 Pro, 128 ГБ, отличное состояние</div>
+              <div class="product-location">📍 Ростов-на-Дону</div>
+              <div class="product-date">Сегодня в 12:45</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/motorcycle.png" alt="Мотоцикл">
+              <button class="favorite" aria-label="Добавить в избранное">+</button>
+            </div>
+            <div class="product-info">
+              <div class="product-price">185 000 ₽</div>
+              <div class="product-title">Мотоцикл в хорошем состоянии, полностью обслужен</div>
+              <div class="product-location">📍 Батайск</div>
+              <div class="product-date">Сегодня в 11:20</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/room.png" alt="Интерьер комнаты">
+              <button class="favorite" aria-label="Добавить в избранное">+</button>
+            </div>
+            <div class="product-info">
+              <div class="product-price">22 000 ₽/мес.</div>
+              <div class="product-title">Уютная квартира-студия, новый ремонт</div>
+              <div class="product-location">📍 Ростов-на-Дону</div>
+              <div class="product-date">Сегодня в 10:15</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/sneakers.png" alt="Кроссовки">
+              <button class="favorite" aria-label="Добавить в избранное">+</button>
+            </div>
+            <div class="product-info">
+              <div class="product-price">6 500 ₽</div>
+              <div class="product-title">Кроссовки Nike, оригинал, размер 43</div>
+              <div class="product-location">📍 Ростов-на-Дону</div>
+              <div class="product-date">Вчера в 19:30</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/laptop.png" alt="Ноутбук">
+              <button class="favorite" aria-label="Добавить в избранное">+</button>
+            </div>
+            <div class="product-info">
+              <div class="verified">Проверенный продавец</div>
+              <div class="product-price">68 000 ₽</div>
+              <div class="product-title">Ноутбук для работы и учёбы, 16 ГБ RAM</div>
+              <div class="product-location">📍 Азов</div>
+              <div class="product-date">Вчера в 17:10</div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="images/sofa.png" alt="Диван">
+              <button class="favorite" aria-label="Добавить в избранное">+</button>
+            </div>
+            <div class="product-info">
+              <div class="product-price">19 900 ₽</div>
+              <div class="product-title">Современный диван для гостиной</div>
+              <div class="product-location">📍 Ростов-на-Дону</div>
+              <div class="product-date">Вчера в 15:42</div>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+    </div>
+
+    <section class="banner">
+      <div>
+        <h2>Есть что продать?</h2>
+        <p>Создай объявление бесплатно и найди покупателя.</p>
+      </div>
+      <a href="#">Разместить объявление ></a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Маркет. Все права защищены.
+  </footer>
+
+</body>
+</html>
